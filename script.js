@@ -77,6 +77,8 @@ tl
         stagger: 0.3
     })
 
+    
+
     // .to("#developer #visual" , {
     //     // scale: 0,
     //     // x: "-500%",
@@ -117,7 +119,7 @@ gsap.to("#projects", {
         start: "left 0",
         end : "left -200%",
         scrub : 2,
-        pin : true
+        pin : true,
+        ease: "ease-in-out"
     }
 })
-

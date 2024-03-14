@@ -140,9 +140,14 @@ html, body {
     color: #14CF93;
     font-size: 120px;
 }
+/* 
+#projects_wrap {
+    margin-top: 0;
+    height: 100vh;
+} */
 
 #projects{
-    width: 200%;
+    width: 150%;
     height: 100vh;
     background-color: #333030;
     padding: 2%;
@@ -151,6 +156,7 @@ html, body {
     /* padding: 10%; */
     align-items: center;
     justify-content: space-around;
+    margin-top: 0;
 }
 
 .project_title {
@@ -166,12 +172,12 @@ html, body {
     border: 1px solid #fff;
     height: 65%;
     width: 25%;
-    padding: 3%;
+    /* padding: 3%; */
     background-color: #14CF93;
     border-radius: 22px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .img {
@@ -195,6 +201,11 @@ html, body {
 .project a:hover {
     background-color: #333030;
     color: #f3f3f3;
+}
+
+.img {
+    height:50%;
+    width:55%;
 }
 
 .flip-card {
@@ -368,4 +379,49 @@ form button {
     width: 40%;
     margin: 3% auto 0;
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 576px){
+    #homecaption {
+        font-size: 40px;
+        /* margin-top: 0; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    
+    #visual {
+        color: #14CF93;
+        font-size: 35px;
+        /* margin-left: 25%; */
+        /* text-align: center; */
+    }
+
+    .project_title {
+        font-size: 30px;
+    }
+
+    #projects {
+        gap: 3%;
+        width: 150%;
+        height: 100vh;
+    }
+
+    .project {
+        width: 60%;
+        height: 100%;
+    }
+
+    .project h2 {
+        font-size: 16px;
+    }
+
+    .flip-card {
+        height: 60%;
+        width: 100%;
+        gap: 1%;
+    }
 }
