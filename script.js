@@ -110,16 +110,43 @@ tl
 //     }
 // })
 
+const projects = document.querySelector("#projects")
+// console.log(projects.offsetWidth)
+
+// function getScrollAmount() {
+//     let projectsWidth = projects.scrollWidth;
+//     console.log(projectsWidth, "projectsWidth");
+//     return -(projectsWidth - window.innerWidth);
+// }
+
+// const tween = gsap.to("#projects", {
+//     x:getScrollAmount,
+//     duration: 3,
+//     ease: "none",
+// })
+
+// ScrollTrigger.create({
+//     trigger: "#projects",
+//     start: "top 0%",
+//     end : () => `+=${getScrollAmount() * -1}`,
+//     pin: true,
+//     animation : tween,
+//     scrub : 1,
+//     invalidateOnRefresh: true,
+//     markers : true
+// })
+
 gsap.to("#projects", {
-    transform : "translateX(-80%)",
+    transform : "translateX(-110%)",
     scrollTrigger : {
-        trigger : "#projects",
+        trigger : "#projects_wrap #projects",
         scroller : "body",
         // markers: true,
-        start: "left 0",
-        end : "left -200%",
+        start: "top 0",
+        end : "top -200%",
         scrub : 2,
         pin : true,
-        ease: "ease-in-out"
+        ease: "ease-in-out",
+        // markers : true
     }
 })

@@ -145,14 +145,19 @@ html, body {
     margin-top: 0;
     height: 100vh;
 } */
+/* #scroller {
+    height: 0;
+    width: 0;
+} */
 
 #projects{
-    width: 100%;
+    width: 140%;
     height: 100vh;
     background-color: #333030;
     padding: 2%;
     display: flex;
-    gap: 8%;
+    gap: 3%;
+    flex-wrap: wrap;
     /* padding: 10%; */
     align-items: center;
     justify-content: space-around;
@@ -160,6 +165,8 @@ html, body {
 }
 
 .project_title {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 51px;
     color: #14CF93;
@@ -170,8 +177,8 @@ html, body {
 
 .project {
     border: 1px solid #fff;
-    height: 65%;
-    width: 25%;
+    height: 45%;
+    width: 6rem;
     /* padding: 3%; */
     background-color: #14CF93;
     border-radius: 22px;
@@ -299,7 +306,7 @@ ul li {
     font-size: 46px;
     font-weight: bolder;
     text-align: center;
-    margin-top: 80%;
+    margin-top: 10%;
   }
 
 #socials {
